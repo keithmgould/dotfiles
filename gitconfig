@@ -10,7 +10,9 @@
   c = commit
   co = checkout
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  rem = rebase master
+  pom = push origin master
+  po = push origin
   prom = pull --rebase origin master
+  rem = rebase master
   s = status
   st = status
