@@ -9,6 +9,7 @@ set background=dark
 
 " show line numbers
 set number
+set ruler
 
 " enable syntax highlighting
 syntax enable
