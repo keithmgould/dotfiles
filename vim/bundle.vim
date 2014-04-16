@@ -25,6 +25,9 @@ Bundle 'tpope/vim-surround'
 " Git wrapper
 Bundle 'tpope/vim-fugitive'
 
+" Comment/Uncomment lines of code
+Bundle 'tpope/vim-commentary'
+
 " Syntax Highlighting
 Bundle 'scrooloose/syntastic'
 

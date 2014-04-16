@@ -17,3 +17,5 @@
   rem = rebase master
   s = status
   st = status
+[rerere]
+	enabled = true
