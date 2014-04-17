@@ -17,5 +17,6 @@
   rem = rebase master
   s = status
   st = status
+  wip = commit -m"WIP"
 [rerere]
 	enabled = true

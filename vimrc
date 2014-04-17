@@ -11,6 +11,10 @@ set background=dark
 set number
 set ruler
 
+" show search results
+set hlsearch
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " enable syntax highlighting
 syntax enable
 
