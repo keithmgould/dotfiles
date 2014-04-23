@@ -21,6 +21,9 @@ syntax enable
 " color scheme
 colorscheme solarized
 
+" Rubocop on save
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
 "------------------------------------
 " Formatting
 "------------------------------------
@@ -30,10 +33,12 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set smartindent
+set smarttab
+set laststatus=2
 
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
 
-"------------------------------------
-" To Do
-"------------------------------------
-" % takes you to the other end of a ruby block
-" GBlame, etc..
+" show matching enclosure
+set showmatch

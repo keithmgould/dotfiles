@@ -40,5 +40,11 @@ Bundle 'kien/ctrlp.vim'
 " Ack
 Bundle 'mileszs/ack.vim'
 
-" Don't use singl character navigation
+" Don't use single character navigation
 Bundle 'wikitopian/hardmode'
+
+" Easily align text
+Bundle 'godlygeek/tabular'
+
+" Match words, not just single chars
+Bundle 'edsono/vim-matchit'
