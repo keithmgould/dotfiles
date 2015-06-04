@@ -15,9 +15,19 @@
   pom = push origin master
   po = push origin
   prom = pull --rebase origin master
+  prim = pull --rebase origin master
   rem = rebase master
   s = status
   st = status
   wip = commit -m"WIP"
+  rh = reset HEAD~1
 [rerere]
 	enabled = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current

@@ -30,6 +30,7 @@ Bundle 'tpope/vim-commentary'
 
 " Syntax Highlighting
 Bundle 'scrooloose/syntastic'
+Bundle 'kchmck/vim-coffee-script'
 
 " Directory tree
 Bundle 'scrooloose/nerdtree'
@@ -48,3 +49,6 @@ Bundle 'godlygeek/tabular'
 
 " Match words, not just single chars
 Bundle 'edsono/vim-matchit'
+
+" Ctags for finding method defs
+Bundle 'szw/vim-tags'

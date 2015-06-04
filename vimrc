@@ -25,6 +25,22 @@ colorscheme solarized
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 "------------------------------------
+" Leader & Leader Shortcuts
+"------------------------------------
+
+" Set Leader to Space
+let mapleader = "\<Space>"
+
+" <Leader>w to save file
+nnoremap <Leader>w :w<CR>
+
+" <Leader>v for Vertical Split
+nnoremap <Leader>v :vs<CR>
+
+" <Leader>h for Horizontal Split
+nnoremap <Leader>h :sp<CR>
+
+"------------------------------------
 " Formatting
 "------------------------------------
 
@@ -42,3 +58,10 @@ set list listchars=tab:»·,trail:·
 
 " show matching enclosure
 set showmatch
+
+
+" Folding
+set foldmethod=marker
+
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
